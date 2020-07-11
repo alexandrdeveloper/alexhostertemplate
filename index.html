@@ -155,6 +155,11 @@
 								<li><a href="#" class="sign">Sign Up</a></li>
 							</ul>
 							<!-- /.main-menu -->
+							<button class="burger">
+								<span></span>
+								<span></span>
+								<span></span>
+							</button>
 						</div>
 							
 					</div>
@@ -175,7 +180,7 @@
 							<ul class="header-hero__list">
 								<li class="header-hero__list-item">
 									<div class="header-hero__list-icon">
-										<img src="img/header/icons/list-icons/1.png" alt="">
+										<img src="img/header/icons/list-icons/support.svg" alt="support">
 									</div>
 									<!-- /.header-hero__list-icon -->
 									<span>Fast support, available 24 / 7 / 365</span>
@@ -183,7 +188,7 @@
 								<!-- /.header-hero__list-item -->
 								<li class="header-hero__list-item">
 									<div class="header-hero__list-icon">
-										<img src="img/header/icons/list-icons/2.png" alt="">
+										<img src="img/header/icons/list-icons/datacenter.svg" alt="datacenter">
 									</div>
 									<!-- /.header-hero__list-icon -->
 									<span>Own data center</span>
@@ -191,7 +196,7 @@
 								<!-- /.header-hero__list-item -->
 								<li class="header-hero__list-item">
 									<div class="header-hero__list-icon">
-										<img src="img/header/icons/list-icons/3.png" alt="">
+										<img src="img/header/icons/list-icons/anonimity.svg" alt="anonimity">
 									</div>
 									<!-- /.header-hero__list-icon -->
 									<span>Anonimity and reliability</span>
@@ -220,6 +225,59 @@
 		</div>
 	</header>
 
+	<div class="menu-mobile">
+		<div class="menu-mobile__header">
+			<div class="menu-mobile__logo">
+				<img src="img/header/logo-black.png" alt="AlexHost">
+			</div>
+			<!-- /.menu-mobile__logo -->
+			<button class="menu-mobile__close"><i class="fa fa-times"></i></button>
+		</div>
+		<!-- /.menu-mobile__header -->
+		<div class="menu-mobile__authorisation">
+			<a href="#" class="theme-btn theme-btn_light">Sign Up</a><a href="#" class="theme-btn theme-btn_light">Login</a>
+		</div>
+		<!-- /.menu-mobile__authorisation -->
+		<ul class="menu-mobile__nav mobile-nav">
+			<li><a href="#">Home</a></li>
+			<li class="carret"><a href="#" >Hosting</a></li>
+			<li><a href="#">VPS</a></li>
+			<li><a href="#">Dedicated Servers</a></li>
+			<li><a href="#">Domains</a></li>
+		</ul>
+		<!-- /.menu-mobile__nav -->
+		<div class="menu-mobile__contacts">
+			<div class="menu-mobile__contacts-tel">
+				<a href="tel:+37322878787">+ (3732) 287-87-87</a>
+			</div>
+			<div class="menu-mobile__contacts-item">
+				<div class="navbar-top__item lang">
+					<a href="#" class="select">English</a>
+					<ul class="lang-list">
+						<li class="lang-list__item lang-list__item_active"><a href="#">English</a></li>
+						<!-- /.lang-list__item -->
+						<li class="lang-list__item"><a href="#">Русский</a></li>
+						<!-- /.lang-list__item -->
+						<li class="lang-list__item"><a href="#">Українська</a></li>
+						<!-- /.lang-list__item -->
+					</ul>
+					<!-- /.lang-list -->
+				</div>
+			</div>
+		</div>
+		<!-- /.menu-mobile__contacts -->
+		<div class="menu-mobile__hot">
+			<div class="navbar-top__left navbar-hot" >
+				<span class="navbar-hot__label">hot</span>
+				<span >						
+					Get your first VPS for 0.99 euro. <a href="#">Get VPS Now!</a>
+				</span>
+			</div>
+		</div>
+		<!-- /.menu-mobile__hot -->
+	</div>
+	<!-- /.menu-mobile -->
+
 	<section class="hostplan">
 		<div class="container">
 			<div class="row section__header">
@@ -231,7 +289,7 @@
 			<div class="row section__content hostplan__content">
 				<div class="col-md-3 hostplan-item">
 					<div class="hostplan-item__content">
-						<div class="hostplan__icon"><img src="img/hostplan/icon-1.png" alt=""></div>
+						<div class="hostplan__icon"><img src="img/hostplan/dedicated-server.svg" alt="dedicated-server"></div>
 						<!-- /.hostplan__icon -->
 						<h4 class="hostplan__name">Dedicated Server</h4>
 						<!-- /.hostplan__name -->
@@ -263,7 +321,7 @@
 				<!-- /.col-md-3 hostplan-item -->
 				<div class="col-md-3 hostplan-item">
 					<div class="hostplan-item__content">
-						<div class="hostplan__icon"><img src="img/hostplan/icon-2.png" alt=""></div>
+						<div class="hostplan__icon"><img src="img/hostplan/shared-hosting.svg" alt="shared-hosting"></div>
 						<!-- /.hostplan__icon -->
 						<h4 class="hostplan__name">Shared Hosting</h4>
 						<!-- /.hostplan__name -->
@@ -299,7 +357,7 @@
 							<span>SAVE 20%</span>
 							<span>MOST POPULAR</span>
 						</div>
-						<div class="hostplan__icon"><img src="img/hostplan/icon-3.png" alt=""></div>
+						<div class="hostplan__icon"><img src="img/hostplan/vps.svg" alt="VPS"></div>
 						<!-- /.hostplan__icon -->
 						<h4 class="hostplan__name">VPS Servers</h4>
 						<!-- /.hostplan__name -->
@@ -332,7 +390,7 @@
 				<!-- /.col-md-3 hostplan-item -->
 				<div class="col-md-3 hostplan-item">
 					<div class="hostplan-item__content">
-						<div class="hostplan__icon"><img src="img/hostplan/icon-4.png" alt=""></div>
+						<div class="hostplan__icon"><img src="img/hostplan/colocation.svg" alt="colocation"></div>
 						<!-- /.hostplan__icon -->
 						<h4 class="hostplan__name">Colocation</h4>
 						<!-- /.hostplan__name -->
@@ -383,13 +441,19 @@
 			<div class="row section__content">
 				<div class="col-md-7 datacenter__content">
 					<div class="row">
-						<div class="col-md-6 datacenter__item">
-							
+						<div class="col-6 datacenter__item">
+							<div class="datacenter__item-icon">
+								<img src="img/datacenter/icons/party.svg" alt="">
+							</div>
+							<!-- /.datacenter__item-icon -->
+							<h3 class="datacenter__item-title">2010</h3>
+							<!-- /.datacenter__item-title -->
+							<span class="datacenter__item-description">Opening year</span>
 						</div>
 						<!-- /.col-md-6 datacenter__item -->
-						<div class="col-md-6 datacenter__item">
+						<div class="col-6 datacenter__item">
 							<div class="datacenter__item-icon">
-								<img src="img/datacenter/icons/1.png" alt="">
+								<img src="img/datacenter/icons/total.svg" alt="Total Channel">
 							</div>
 							<!-- /.datacenter__item-icon -->
 							<h3 class="datacenter__item-title">20 Gbit/s</h3>
@@ -397,9 +461,9 @@
 							<span class="datacenter__item-description">Total Channel</span>
 						</div>
 						<!-- /.col-md-6 datacenter__item -->
-						<div class="col-md-6 datacenter__item">
+						<div class="col-6 datacenter__item">
 							<div class="datacenter__item-icon">
-								<img src="img/datacenter/icons/2.png" alt="">
+								<img src="img/datacenter/icons/capacity.svg" alt="Total feeder capacity">
 							</div>
 							<!-- /.datacenter__item-icon -->
 							<h3 class="datacenter__item-title">1.6 MW</h3>
@@ -407,9 +471,9 @@
 							<span class="datacenter__item-description">Total feeder capacity</span>
 						</div>
 						<!-- /.col-md-6 datacenter__item -->
-						<div class="col-md-6 datacenter__item">
+						<div class="col-6 datacenter__item">
 							<div class="datacenter__item-icon">
-								<img src="img/datacenter/icons/3.png" alt="">
+								<img src="img/datacenter/icons/ddos.svg" alt="Anti-DDos attacks">
 							</div>
 							<!-- /.datacenter__item-icon -->
 							<h3 class="datacenter__item-title">500 Gbit / S</h3>
