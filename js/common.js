@@ -67,7 +67,7 @@ $(function() {
 	
 	});
 
-	let footerAccHead = $('.mobile-accordeon').find('h4');
+	let footerAccHead = $('.mobile-accordeon').find('.footer__subtitle');
 	let footerAccHeadActiveClass = 'mobile-accordeon_active'
 
 	let footerClickToggle = function() {
@@ -106,6 +106,24 @@ $(function() {
 
 	$('.menu-mobile').find('.carret').on('click', function() {
 		$(this).find('.sub-menu_mobile').slideToggle(300);
+	});
+
+	$('.certifications-grid').magnificPopup({
+		delegate: 'a',
+		type: 'image',
+		tLoading: 'Loading image #%curr%...',
+		mainClass: 'mfp-img-mobile',
+		gallery: {
+			enabled: true,
+			navigateByImgClick: true,
+			preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+		},
+		image: {
+			tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+			titleSrc: function(item) {
+				return item.el.attr('title');
+			}
+		}
 	});
 
 	
