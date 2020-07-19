@@ -334,12 +334,16 @@
 	</div>
 	<!-- /.menu-mobile -->
 
+	<button class="online-chat-btn">
+		<img src="img/hostplan/title-logo.png" alt="">
+	</button>
+
 	<section class="hostplan">
 		<div class="container">
 			<div class="row section__header">
 				<div class="col-12">
 					<h2>Choose Your Web Hosting Plan</h2>
-					<div class="hostplan-logo"><img src="img/hostplan/title-logo.png" alt=""></div>
+					
 				</div>
 			</div>
 			<!-- /.row section__header -->
@@ -348,7 +352,7 @@
 					<div class="hostplan-item__content">
 						<div class="hostplan__icon"><img src="img/hostplan/dedicated-server.svg" alt="dedicated-server"></div>
 						<!-- /.hostplan__icon -->
-						<h4 class="hostplan__name">Dedicated Server</h4>
+						<h3 class="hostplan__name">Dedicated Server</h3>
 						<!-- /.hostplan__name -->
 						<span class="hostplan__tags">Linux, Windows</span>
 						<span class="hostplan__cost">$ <b>0.88</b> / day</span>
@@ -380,7 +384,7 @@
 					<div class="hostplan-item__content">
 						<div class="hostplan__icon"><img src="img/hostplan/shared-hosting.svg" alt="shared-hosting"></div>
 						<!-- /.hostplan__icon -->
-						<h4 class="hostplan__name">Shared Hosting</h4>
+						<h3 class="hostplan__name">Shared Hosting</h3>
 						<!-- /.hostplan__name -->
 						<span class="hostplan__tags">cPanel / WHM</span>
 						<span class="hostplan__cost">$ <b>0.88</b> / mo</span>
@@ -409,14 +413,15 @@
 				</div>
 				<!-- /.col-md-3 hostplan-item -->
 				<div class="col-lg-3 col-sm-6 hostplan-item hostplan-item_most-popular">
-					<div class="hostplan-item__content">
-						<div class="hostplan-item__label">
+					<div class="hostplan-item__label">
 							<span>SAVE 20%</span>
 							<span>MOST POPULAR</span>
 						</div>
+					<div class="hostplan-item__content">
+						
 						<div class="hostplan__icon"><img src="img/hostplan/vps.svg" alt="VPS"></div>
 						<!-- /.hostplan__icon -->
-						<h4 class="hostplan__name">VPS Servers</h4>
+						<h3 class="hostplan__name">VPS Servers</h3>
 						<!-- /.hostplan__name -->
 						<span class="hostplan__tags">Unmanaged</span>
 						<span class="hostplan__cost">$ <b>0.88</b> / mo</span>
@@ -449,7 +454,7 @@
 					<div class="hostplan-item__content">
 						<div class="hostplan__icon"><img src="img/hostplan/colocation.svg" alt="colocation"></div>
 						<!-- /.hostplan__icon -->
-						<h4 class="hostplan__name">Colocation</h4>
+						<h3 class="hostplan__name">Colocation</h3>
 						<!-- /.hostplan__name -->
 						<span class="hostplan__tags">Any OS</span>
 						<span class="hostplan__cost">$ <b>0.88</b> / mo</span>
@@ -503,7 +508,7 @@
 								<img src="img/datacenter/icons/party.svg" alt="">
 							</div>
 							<!-- /.datacenter__item-icon -->
-							<h3 class="datacenter__item-title">2010</h3>
+							<span class="datacenter__item-title">2010</span>
 							<!-- /.datacenter__item-title -->
 							<span class="datacenter__item-description">Opening year</span>
 						</div>
@@ -513,7 +518,7 @@
 								<img src="img/datacenter/icons/total.svg" alt="Total Channel">
 							</div>
 							<!-- /.datacenter__item-icon -->
-							<h3 class="datacenter__item-title">20 Gbit/s</h3>
+							<span class="datacenter__item-title">20 Gbit/s</span>
 							<!-- /.datacenter__item-title -->
 							<span class="datacenter__item-description">Total Channel</span>
 						</div>
@@ -523,7 +528,7 @@
 								<img src="img/datacenter/icons/capacity.svg" alt="Total feeder capacity">
 							</div>
 							<!-- /.datacenter__item-icon -->
-							<h3 class="datacenter__item-title">1.6 MW</h3>
+							<span class="datacenter__item-title">1.6 MW</span>
 							<!-- /.datacenter__item-title -->
 							<span class="datacenter__item-description">Total feeder capacity</span>
 						</div>
@@ -533,7 +538,7 @@
 								<img src="img/datacenter/icons/ddos.svg" alt="Anti-DDos attacks">
 							</div>
 							<!-- /.datacenter__item-icon -->
-							<h3 class="datacenter__item-title">500 Gbit / S</h3>
+							<span class="datacenter__item-title">500 Gbit / S</span>
 							<!-- /.datacenter__item-title -->
 							<span class="datacenter__item-description">Anti-DDos attacks</span>
 						</div>
@@ -543,10 +548,17 @@
 				</div>
 				<!-- /.col-md-7 datacenter__content -->
 				<div class="col-md-5 datacenter__map">
-					<svg viewBox="0 0 630.66669 756" width="100%">
+					<svg viewBox="0 0 630.66669 756" width="100%" xmlns="http://www.w3.org/2000/svg">
 						<circle r="22" cy='376.95822' cx="393.84991"></circle>
+						<g>
+							<rect y="186" x="310" height="130" width="317"></rect>
+							<text y="240" x="330" widht="290">Own Data center</text>
+							<text y="276" x="330" widht="80%">in Chisinau, Moldova</text>
+								
+						</g>
+							
 					</svg>
-					<img src="img/datacenter/map-2.png" alt="datacenter">
+					<img src="img/datacenter/map-3.svg" alt="datacenter">
 				</div>
 				<!-- /.col-md-5 datacenter__map -->
 			</div>
@@ -571,7 +583,7 @@
 				<div class="col-sm-4 choose__item">
 					<div class="choose__icon"><img src="img/choose/datacenter.svg" alt="Own data center"></div>
 					<!-- /.choose__icon -->
-					<h4 class="choose__title">Own data center</h4>
+					<h3 class="choose__title">Own data center</h3>
 					<!-- /.choose__title -->
 					<p>AlexHost data-center is located in The Republic of Moldova (Chisinau) on the former war plant territory in bomb-shelterr 5 meters below the ground.</p>
 				</div>
@@ -579,7 +591,7 @@
 				<div class="col-sm-4 choose__item">
 					<div class="choose__icon"><img src="img/choose/hdd.svg" alt="The latest hardware"></div>
 					<!-- /.choose__icon -->
-					<h4 class="choose__title">The latest hardware</h4>
+					<h3 class="choose__title">The latest hardware</h3>
 					<!-- /.choose__title -->
 					<p>We use only our own equipment with proven high quality. All hard drive sare SSD.</p>
 				</div>
@@ -587,7 +599,7 @@
 				<div class="col-sm-4 choose__item">
 					<div class="choose__icon"><img src="img/choose/support.svg" alt="choose-3"></div>
 					<!-- /.choose__icon -->
-					<h4 class="choose__title">Perfect support</h4>
+					<h3 class="choose__title">Perfect support</h3>
 					<!-- /.choose__title -->
 					<p>Our technical support is working hard to process any request as quickly as possible. It won’t take longer than half an hour. Many processes are automated.</p>
 				</div>
@@ -595,7 +607,7 @@
 				<div class="col-sm-4 choose__item">
 					<div class="choose__icon"><img src="img/choose/moneyback.svg" alt="choose-4"></div>
 					<!-- /.choose__icon -->
-					<h4 class="choose__title">Money-back Guarantee</h4>
+					<h3 class="choose__title">Money-back Guarantee</h3>
 					<!-- /.choose__title -->
 					<p>Try us and love us, or get a refund within 30 days of signing up. Your satisfaction is our top priority.</p>
 				</div>
@@ -603,7 +615,7 @@
 				<div class="col-sm-4 choose__item">
 					<div class="choose__icon"><img src="img/choose/security.svg" alt="choose-5"></div>
 					<!-- /.choose__icon -->
-					<h4 class="choose__title">Commitment to Security</h4>
+					<h3 class="choose__title">Commitment to Security</h3>
 					<!-- /.choose__title -->
 					<p>Our many security features include Multi Factor Authentication, auto-enabled sFTP and free secure hosting with Let's Encrypt.</p>
 				</div>
@@ -611,7 +623,7 @@
 				<div class="col-sm-4 choose__item">
 					<div class="choose__icon"><img src="img/choose/privacy.svg" alt="choose-6"></div>
 					<!-- /.choose__icon -->
-					<h4 class="choose__title">Passion for Privacy</h4>
+					<h3 class="choose__title">Passion for Privacy</h3>
 					<!-- /.choose__title -->
 					<p>We believe in everyone's right to privacy, and we back that with a strong anti-spam policy and free WHOIS privacy.</p>
 				</div>
@@ -643,7 +655,7 @@
 							</div>
 							<!-- /.feedback-item__user-photo -->
 							<div class="user__info">
-								<h5 class="user__name">Jane Doe</h5>
+								<span class="user__name">Jane Doe</span>
 								<span class="user__prof">CEO of Company_name</span>
 							</div>
 							<!-- /.feedback-item__user-info -->
@@ -663,7 +675,7 @@
 							</div>
 							<!-- /.feedback-item__user-photo -->
 							<div class="user__info">
-								<h5 class="user__name">Jane Doe</h5>
+								<span class="user__name">Jane Doe</span>
 								<span class="user__prof">CEO of Company_name</span>
 							</div>
 							<!-- /.feedback-item__user-info -->
@@ -683,7 +695,7 @@
 							</div>
 							<!-- /.feedback-item__user-photo -->
 							<div class="user__info">
-								<h5 class="user__name">Jane Doe</h5>
+								<span class="user__name">Jane Doe</span>
 								<span class="user__prof">CEO of Company_name</span>
 							</div>
 							<!-- /.feedback-item__user-info -->
@@ -703,7 +715,7 @@
 							</div>
 							<!-- /.feedback-item__user-photo -->
 							<div class="user__info">
-								<h5 class="user__name">Jane Doe</h5>
+								<span class="user__name">Jane Doe</span>
 								<span class="user__prof">CEO of Company_name</span>
 							</div>
 							<!-- /.feedback-item__user-info -->
@@ -723,7 +735,7 @@
 							</div>
 							<!-- /.feedback-item__user-photo -->
 							<div class="user__info">
-								<h5 class="user__name">Jane Doe</h5>
+								<span class="user__name">Jane Doe</span>
 								<span class="user__prof">CEO of Company_name</span>
 							</div>
 							<!-- /.feedback-item__user-info -->
@@ -743,7 +755,7 @@
 							</div>
 							<!-- /.feedback-item__user-photo -->
 							<div class="user__info">
-								<h5 class="user__name">Jane Doe</h5>
+								<span class="user__name">Jane Doe</span>
 								<span class="user__prof">CEO of Company_name</span>
 							</div>
 							<!-- /.feedback-item__user-info -->
@@ -763,7 +775,7 @@
 							</div>
 							<!-- /.feedback-item__user-photo -->
 							<div class="user__info">
-								<h5 class="user__name">Jane Doe</h5>
+								<span class="user__name">Jane Doe</span>
 								<span class="user__prof">CEO of Company_name</span>
 							</div>
 							<!-- /.feedback-item__user-info -->
@@ -897,7 +909,13 @@
 	<!-- /.quote -->
 
 	<section class="blog">
-		<div class="container">			
+		<div class="container">
+			<div class="row section__header">
+				<div class="col-12">
+					<h2>Our Strengths and Key Differences</h2>
+				</div>
+			</div>
+			<!-- /.row section__header -->			
 			<div class="row blog__row">
 				<div class="col-md-6 blog__image">
 					<div class="blog__image-box">
@@ -975,7 +993,7 @@
 		<div class="container">
 			<div class="row section__header">
 				<div class="col-12">
-					<h2>Ready to go beyond? Start today with our<br>beneficial payment solutions</h2>
+					<span class="start__title">Ready to go beyond? Start today with our<br>beneficial payment solutions</span>
 					<p>Fast setup. No long-term contracts. Cancel anytime.</p>
 				</div>
 			</div>
@@ -1040,9 +1058,9 @@
 						<div class="col-md-6 col-lg-12 footer__social">
 								<h4>Folow us</h4>
 								<div class="footer__social-list">
-									<a href="#"><img src="img/footer/insta.svg" alt="instagram"></a>
-									<a href="#"><img src="img/footer/fb.svg" alt=""></a>
-									<a href="#"><img src="img/footer/yb.svg"></a>
+									<a href="#"><i class="fa fa-instagram"></i></a>
+									<a href="#"><i class="fa fa-facebook"></i></a>
+									<a href="#"><i class="fa fa-youtube"></i></a>
 								</div>
 							</div>
 					</div>

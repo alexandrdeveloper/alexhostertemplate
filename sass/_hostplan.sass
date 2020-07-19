@@ -1,0 +1,274 @@
+.hostplan 
+	&__content 
+		align-items: flex-end
+	&-item 
+		padding: 0 12px
+
+		&__content 
+			background: #FFFFFF
+			box-shadow: 0px 8px 30px rgba(0, 0, 0, 0.1)
+			border-radius: 6px
+			padding: 24px 20px
+			height: 100%
+			position: relative
+			border: 2px solid transparent
+			transition: .3s
+			align-items: flex-end
+			span 
+				display: inline-block
+				width: 100%
+				text-align: center
+			&:hover 
+				border-color: $blue
+				box-shadow: 0px 8px 30px rgba($blue, 0.1)
+				
+
+		&_most-popular
+			.hostplan-item__content 
+				border-radius: 0 0 6px 6px
+				position: relative
+			&:hover 
+				.hostplan-item__content 
+					border-color: $blue
+					border-top: 2px solid transparent
+				.hostplan-item__label
+					border-color: $blue
+					
+			.hostplan-item__label
+				position: relative
+				bottom: 100%
+				left: 0
+				width: 100%
+				padding: 10px 20px
+				background-color: #FADB5F
+				border: 2px solid #FADB5F
+				border-radius: 6px 6px 0 0
+				display: flex
+				justify-content: space-between
+				align-items: center 
+				color: #8D2B0B
+				font-size: 16px
+				font-family: 'general-normal'
+				font-weight: 600
+				border-bottom: none
+				transition: .3s
+				span 
+					display: inline-block
+					width: auto
+					&:nth-child(1)
+						text-align: left
+					&:nth-child(2)
+						text-align: right
+
+
+	&__icon 
+		display: flex
+		justify-content: center
+		align-items: center 
+		img 
+			display: block
+			width: 60px
+			height: 60px
+	&__name
+		color: #2333A4
+		text-align: center 
+		display: inline-block 
+		width: 100%
+		padding-top: 14px
+		padding-bottom: 6px
+		margin-bottom: 0
+		line-height: 1.22
+		font-size: 24px
+
+	&__tags 
+		font-family: 'general-normal'
+		font-size: 18px
+		margin-bottom: 14px
+		color: #2D3748
+	&__btn
+		width: 100%
+		padding-top: 10px
+		padding-bottom: 10px
+		font-size: 18px
+	&__cost
+		font-family: 'general-normal'
+		font-weight: 600
+		font-size: 28px
+		b 
+			font-size: 40px
+			font-family: 'general-bold'
+	&__save
+		display: flex
+		flex-direction: row
+		justify-content: space-between 
+		align-items: center 
+		padding-top: 10px
+		padding-bottom: 10px
+		span 
+
+			font-family: 'general-normal'
+			font-weight: 600
+			font-size: 18px
+		.save-percent
+			color: #233BE2
+			font-size: 16px
+			padding: 10px 15px			
+			border-radius: 6px
+			&_bg 
+				background: #F6F6F9
+		.old-cost
+			color: #CBD5E0
+			text-decoration: line-through
+			font-size: 18px
+	&__config 
+		padding-left: 30px
+		padding-right: 0
+		margin-top: 20px
+		padding-bottom: 20px
+		margin-bottom: 0
+		min-height: 240px
+		li 
+			font-size: 14px
+			line-height: 1.2
+			font-family: 'general-normal'
+			color: #4A5568
+			margin-bottom: 13px
+			position: relative
+			&::before
+				content: '\f00c'
+				font-family: 'FA-PR-400' 
+				display: inline-block
+				position: absolute
+				left: -25px
+				color: #00C063
+			&.accent
+				&::before 
+					color: #DFB044
+
+
+
+	&__bottom 
+		position: relative
+		margin: auto 
+
+	&__renew 
+		font-size: 14px
+		color: #AEB0CA
+		padding-top: 10px
+		padding-bottom: 16px
+	&__more 
+		text-align: center 
+		display: block 
+		font-family: 'general-normal'
+		font-weight: 600
+		color: #233BE2
+		transition: .3s
+		&::after 
+			content: '\f107'
+			font-family: 'FA-PR-400' 
+			display: inline-block
+			margin-left: 8px
+			vertical-align: middle 
+		&:hover 
+			color: #8D2B0B
+
+	&-table
+		width: 100%
+		border-collapse: separate
+		border-spacing: 0 16px
+		.theme-btn
+			padding: 10px 
+			max-width: 170px
+			margin: auto
+		tr
+
+			td 
+				padding: 15px 5px
+				font-weight: 600
+				font-size: 16px
+				line-height: 19px
+				
+				&:nth-child(1)					
+					padding-left: 30px
+					padding-right: 30px	
+		tr:nth-child(1) 
+			td 
+				color: #AEB0CA
+				font-size: 14px
+				padding-bottom: 0
+				align: bottom
+				vertical-align: bottom
+		&__item
+			background: #FFFFFF
+			
+			box-sizing: border-box
+			box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.06)
+			border-radius: 6px
+			padding-bottom: 16px
+			width: 100%
+			transition: .3s
+			&:hover
+				transform: scaleX(1.05)
+				td
+					
+					border-color: #233BE2
+					&:first-child,
+					&:last-child
+						border-color: #233BE2
+					
+						
+			
+			td
+				border: 1.5px solid #E2E8F0
+				border-right: none
+				border-left: none
+				&:first-child
+					border-left: 1.5px solid #E2E8F0
+					border-radius: 6px 0 0 6px
+				&:last-child
+					border-right: 1.5px solid #E2E8F0
+					border-radius: 0 6px 6px 0
+					text-align: center
+
+		&__old-price,
+		&__save,
+		&__new-price
+			display: block	
+			font-size: 12px
+
+		&__old-price
+			font-weight: 600
+			text-decoration: line-through
+			color: #CBD5E0
+			
+
+		&__save
+			padding: 6px 
+			text-align: center
+			background: #F6F6F9
+			border-radius: 6px
+			color: #233BE2
+			&_accent
+				background: #FFFAF0
+				color: $accent
+
+		&__new-price
+			font-size: 14px
+
+	.section__header
+		position: relative
+		.hostplan-logo
+			width: 60px
+			position: absolute
+			right: 0
+			+center-y
+			cursor: pointer
+			img
+				display: block
+				width: 100%
+
+@media screen and (max-width: 1023px)
+	.hostplan-logo
+		display: none
+			
+

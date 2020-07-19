@@ -1,0 +1,130 @@
+.about-hero
+	&__suptitle
+		font-size: 18px
+		color: #CBD5E0
+		text-transform: uppercase
+		letter-spacing: 0.04em
+		font-weight: 600
+		display: inline-block
+		margin-bottom: 16px
+
+.hall 
+	padding-top: 0
+	padding-bottom: 0
+	position: relative
+	img 
+		display: block
+		width: 100%
+	&__label
+		position: absolute
+		bottom: 0
+		left: 0
+		right: 0
+		background-color: rgba(#000, .5)
+		padding: 18px 0
+		span 
+			color: #fff
+			font-weight: 600
+			font-size: 20px
+
+
+.team-grid
+	margin-top: 120px
+	&__item 
+		position: relative
+	&__photo
+		position: relative
+		width: 100%
+		overflow: hidden
+		&::before
+			content: ''
+			width: 100%
+			display: block
+			padding-top: 120%
+		img 
+			position: absolute
+			top: 0
+			left: 0
+			right: 0
+			height: auto 
+
+	&__info 
+		background: #F6F6F9
+		padding: 20px
+		text-align: center
+	&__name 
+		display: block 
+		font-size: 24px
+		font-weight: 600
+		color: $text
+		transition: .3s
+		&:hover
+			color: $accent
+	&__profession
+		font-size: 18px
+		color: #4A5568
+		display: block
+		margin-bottom: 16px
+	&__social-list 
+		width: 100%
+		display: flex
+		flex-direction: row
+		justify-content: center 
+		align-items: center 
+	&__social-item 
+		display: inline-block
+		margin: 0 8px
+		i.fa 
+			font-family: 'FA-BR-400'
+			color: $text
+			transition: .3s
+
+			&:hover 
+				color: $accent  
+	&__suptitle
+		position: absolute
+		left: 0
+		bottom: calc(100% + 16px)
+		font-size: 18px
+		color: #CBD5E0
+		text-transform: uppercase
+		letter-spacing: 0.04em
+		font-weight: 600
+		display: inline-block
+		margin-bottom: 16px
+		padding: inherit 
+
+
+.certifications
+	&-grid
+		&__item 
+			padding: 24px 34px
+			border-right: 1.5px solid #E2E8F0
+			border-bottom: 1.5px solid #E2E8F0
+			padding-bottom: 24px
+			padding-top: 0
+			&:nth-child(4),
+			&:nth-child(8)
+				border-right: none 
+			&:nth-child(5),
+			&:nth-child(6),
+			&:nth-child(7),
+			&:nth-child(8)
+				border-bottom: none 
+				padding-top: 24px
+				padding-bottom: 0
+
+		&__image
+			width: 100%
+			max-width: 195px
+			margin-left: auto
+			margin-right: auto 
+			img 
+				display: block
+				width: 100%
+		&__name 
+			height: 100px
+			display: flex
+			justify-content: center
+			align-items: center
+			text-align: center
